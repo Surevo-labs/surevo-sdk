@@ -18,3 +18,9 @@ export type {
   SurevoAttestation,
   SurevoGuarantees,
 } from "./attestation.js";
+
+export {
+  DEFAULT_FRESHNESS_WINDOW,
+  getLedgerAge,
+  isAttestationFresh,
+} from "./freshness.js";
