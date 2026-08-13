@@ -7,3 +7,14 @@ export type {
   ResolvedSurevoConfig,
   SurevoConfig,
 } from "./config.js";
+
+export {
+  getAttestationStatus,
+  isVerified,
+} from "./attestation.js";
+
+export type {
+  AttestationStatus,
+  SurevoAttestation,
+  SurevoGuarantees,
+} from "./attestation.js";
