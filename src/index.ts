@@ -24,3 +24,17 @@ export {
   getLedgerAge,
   isAttestationFresh,
 } from "./freshness.js";
+
+export {
+  SurevoVerifierError,
+  VERIFIER_ERROR_NAMES,
+  getVerifierErrorDetails,
+  isVerifierErrorCode,
+  parseVerifierError,
+} from "./errors.js";
+
+export type {
+  VerifierErrorCode,
+  VerifierErrorDetails,
+  VerifierErrorName,
+} from "./errors.js";
