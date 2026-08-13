@@ -17,7 +17,7 @@
   "scripts": {
     "build": "tsc",
     "typecheck": "tsc --noEmit",
-    "test": "npm run build && node --test test",
+    "test": "npm run build && node --test test/*.test.js",
     "clean": "rm -rf dist"
   },
   "repository": {
