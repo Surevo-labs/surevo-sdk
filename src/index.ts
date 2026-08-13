@@ -38,3 +38,5 @@ export type {
   VerifierErrorDetails,
   VerifierErrorName,
 } from "./errors.js";
+
+export { SurevoClient } from "./client.js";
