@@ -1,0 +1,47 @@
+{
+  "name": "surevo-sdk",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for integrating private proof-of-reserves attestations into Stellar applications.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "npm run build && node --test test",
+    "clean": "rm -rf dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Surevo-labs/surevo-sdk.git"
+  },
+  "keywords": [
+    "stellar",
+    "soroban",
+    "proof-of-reserves",
+    "zero-knowledge",
+    "sdk"
+  ],
+  "author": "Surevo Labs",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Surevo-labs/surevo-sdk/issues"
+  },
+  "homepage": "https://github.com/Surevo-labs/surevo-sdk#readme",
+  "dependencies": {
+    "@stellar/stellar-sdk": "^16.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "typescript": "^7.0.2"
+  }
+}
