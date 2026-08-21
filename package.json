@@ -15,10 +15,11 @@
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
-    "typecheck": "tsc --noEmit",
-    "test": "npm run build && node --test test/*.test.js",
-    "clean": "rm -rf dist"
+  "build": "tsc",
+  "typecheck": "tsc --noEmit",
+  "test": "npm run build && node --test test/*.test.js",
+  "example:testnet": "node examples/read-verifier.mjs",
+  "clean": "rm -rf dist"
   },
   "repository": {
     "type": "git",
