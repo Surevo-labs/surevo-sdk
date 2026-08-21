@@ -67,6 +67,25 @@ console.log({
 
 The default configuration uses Stellar testnet. Custom RPC URLs and network passphrases can be supplied when creating the client.
 
+## Run the Stellar testnet example
+
+The SDK includes a complete example that reads public state from the deployed Surevo verifier on Stellar testnet.
+
+```bash
+npm run example:testnet
+```
+
+The example uses the public `SurevoClient` API and prints:
+
+* The latest Stellar testnet ledger
+* The verifier verification-key byte length
+* Whether a fictional 32-byte nullifier has already been used
+
+No secret key, seed phrase, or private reserve data is required.
+
+The example source is available at `examples/read-verifier.mjs`.
+
+
 ## Attestation status
 
 ```ts
